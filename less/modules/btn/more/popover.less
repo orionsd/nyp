@@ -1,0 +1,29 @@
+.btn-more-popover {
+  display: inline-block;
+  vertical-align: middle;
+  height: 12px;
+  background-color: #cecece;
+  border-radius: 20px;
+  width: 22px;
+  position: relative;
+  &.active,
+  &:hover {
+    background-color: #e60716;
+  }
+  &__dot {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 50%;
+    left: 4px;
+    top: 4px;
+  }
+  &__dot + &__dot {
+    left: 9px;
+  }
+  &__dot + &__dot + &__dot {
+    left: 14px;
+  }
+}

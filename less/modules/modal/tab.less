@@ -1,0 +1,19 @@
+.modal-tab {
+  float: right;
+  margin-top: 7px;
+  &__text {
+    text-decoration: underline;
+    color: #FFF6F7;
+    font-family: @FOSEBC;
+    font-size: 22px;
+  }
+  &.active {
+    float: left;
+    margin-top: 0;
+  }
+  &.active &__text {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 32px;
+  }
+}

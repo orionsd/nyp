@@ -1,0 +1,67 @@
+.modal-header {
+  background-color: #e60716;
+  min-height: 80px;
+  padding: 0 20px;
+  position: relative;
+  &__title {
+    color: #FFF;
+    font-family: @FOSEBOSC;
+    font-size: 32px;
+    font-weight: 400;
+    padding-right: 40px;
+    line-height: 40px;
+  }
+  &__tabs {
+    padding-top: 15px;
+  }
+  &__close {
+    position: absolute;
+    right: -15px;
+    top: -60px;
+  }
+  &__icon {
+    width: 213px;
+    height: 131px;
+    color: #fff;
+    display: none;
+  }
+  &_product {
+    height: 0;
+    border: none;
+  }
+  &_hello {
+    padding: 20px 20px 45px 20px;
+  }
+  @media (min-width: @screen-sm) {
+    padding: 0;
+    min-height: 190px;
+    &__close {
+      right: -60px;
+      top: -60px;
+    }
+    &__tabs {
+      padding-top: 70px;
+    }
+    &_product {
+      min-height: 0;
+      border: none;
+    }
+    &_product &__close {
+      right: -45px;
+    }
+    &__title {
+      width: 500px;
+      margin: 70px auto 0 auto;
+      line-height: 40px;
+      padding-right: 150px;
+    }
+  }
+  @media (min-width: @screen-md) {
+    &__icon {
+      display: block;
+      position: absolute;
+      right: 54px;
+      top: 38px;
+    }
+  }
+}

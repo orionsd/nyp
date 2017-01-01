@@ -1,0 +1,64 @@
+.catalog-box {
+  margin: 10px 0;
+  position: relative;
+  background-color: #fbfcff;
+  padding-bottom: 5px;
+  min-height: 286px;
+  &__smile,
+  &__more {
+    display: none;
+    position: absolute;
+  }
+
+  &__smile {
+    right: 0;
+    z-index: 2;
+  }
+  &__more {
+    left: 0;
+    right: 0;
+  }
+
+  &__info {
+    padding: 0 14px;
+  }
+
+  &__more,
+  &.active &__preview{
+    opacity: 0;
+  }
+
+  &.active &__more {
+    z-index: 1;
+  }
+  &__preview,
+  &.active &__more {
+    opacity: 1;
+  }
+  @media (min-width: @screen-sm) {
+    margin: 25px 0;
+    min-height: 556px;
+    &__info {
+      padding: 15px 25px 0 25px;
+    }
+  }
+  @media (min-width: @screen-lg) {
+    &_action &__more {
+      padding-top: 30px;
+    }
+    &__smile,
+    &__more {
+      display: block;
+    }
+  }
+  @media (min-width: @screen-vl) {
+    margin: 25px 0;
+    padding-bottom: 13px;
+    &__info {
+      padding: 15px 21px 0 21px;
+    }
+    &_action &__info {
+      padding-top: 18px;
+    }
+  }
+}

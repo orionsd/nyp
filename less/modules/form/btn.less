@@ -1,0 +1,38 @@
+.form-btn {
+  &_sign {
+    padding: 9.5px 24px;
+  }
+  &_reset {
+    background-color: #f5f5f5;
+    width: 138px;
+    height: 36px;
+  }
+  &_reset &__text {
+    color: #444;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  &_reset:hover &__text {
+    color: #E60716;
+  }
+  .form_hello &_reset,
+  .form_hello &_confirm {
+    width: 100%;
+  }
+  @media (min-width: @screen-sm) {
+    &_sign {
+      padding: 9.5px 17px;
+    }
+    .form_hello &_confirm {
+      width: auto;
+    }
+    .form_hello &_reset {
+      width: 138px;
+    }
+  }
+  @media (min-width: @screen-vl) {
+    .form_hello &_confirm {
+      padding: 9.5px 24px;
+    }
+  }
+}

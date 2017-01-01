@@ -1,0 +1,28 @@
+.info-link {
+  font-family: @FOSEBC;
+  color: #555;
+  font-size: 28px;
+  text-decoration: underline;
+  &:hover,
+  &:focus {
+    color: #555;
+  }
+  &_navbar {
+    color: #ffffff;
+    font-size: 28px;
+    line-height: 33px;
+    text-decoration: none;
+  }
+
+  &_navbar:hover,
+  &_navbar:focus {
+    color: #ffffff;
+  }
+
+  @media (min-width: @screen-md) {
+    &_navbar {
+      font-size: 32px;
+      line-height: 37px;
+    }
+  }
+}

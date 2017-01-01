@@ -1,0 +1,148 @@
+.navbar-link {
+  display: block;
+  text-align: center;
+  width: 130px;
+  height: 130px;
+  margin-bottom: 20px;
+  &__icon {
+    color: #f00010;
+  }
+  &__icon,
+  &__icon-hover {
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  &__title {
+    letter-spacing: 3px;
+    font-family: @FOSEBOSC;
+    text-transform: uppercase;
+    color: #555555;
+    font-size: 16px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -20px;
+  }
+
+  &:hover,
+  &:focus {
+    color: #555555;
+    text-decoration: none;
+  }
+
+  &__icon-hover,
+  &:hover &__icon-hover {
+    color: #5f5f5f;
+  }
+
+  &__icon-hover {
+    display: none;
+  }
+
+  &.active &__icon,
+  &:hover &__icon {
+    display: none;
+  }
+
+  &.active &__icon-hover,
+  &:hover &__icon-hover {
+    display: block;
+  }
+
+  &_pizza &__icon {
+    width: 64px;
+    height: 55px;
+    margin-top: -55px/2;
+    margin-left: -32px;
+  }
+  &_pizza &__icon-hover {
+    width: 130px;
+    height: 61px;
+    margin-top: -27.5px;
+    margin-left: -65px;
+  }
+  &_snack &__icon {
+    width: 57px;
+    height: 57px;
+    margin-top: -57px/2;
+    margin-left: -57px/2;
+  }
+
+  &_snack &__icon-hover {
+    width: 118px;
+    height: 95px;
+    margin-top: -47.5px;
+    margin-left: -58px;
+  }
+
+  &_salad &__icon {
+    width: 86px;
+    height: 64px;
+    margin-top: -64px/2;
+    margin-left: -86px/2;
+  }
+
+  &_salad &__icon-hover {
+    width: 121px;
+    height: 104px;
+    margin-top: -50px;
+    margin-left: -64px;
+  }
+
+  &_drink &__icon {
+    width: 39px;
+    height: 67px;
+    margin-top: -67px/2;
+    margin-left: -39px/2;
+
+  }
+
+  &_drink &__icon-hover {
+    width: 125px;
+    height: 67px;
+    margin-top: -33px;
+    margin-left: -65px;
+  }
+
+  &_desert &__icon {
+    width: 67px;
+    height: 58px;
+    margin-top: -58px/2;
+    margin-left: -67px/2;
+  }
+  &_desert &__icon-hover {
+    width: 55px;
+    height: 113px;
+    margin-top: -54px;
+    margin-left: -27.5px;
+  }
+
+  &_sale &__icon {
+    width: 61px;
+    height: 61px;
+    margin-top: -61px/2;
+    margin-left: -61px/2;
+  }
+
+  &_sale &__icon-hover {
+    width: 83px;
+    height: 78px;
+    margin-top: -30px;
+    margin-left: -52.5px;
+  }
+
+  &_bonus &__icon {
+    width: 67px;
+    height: 58px;
+    margin-top: -58px/2;
+    margin-left: -67px/2;
+  }
+  &_bonus &__icon-hover {
+    width: 67px;
+    height: 111px;
+    margin-top: -56px;
+    margin-left: -33px;
+  }
+}

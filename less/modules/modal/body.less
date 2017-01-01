@@ -1,0 +1,41 @@
+.modal-body {
+  padding: 0;
+  &_hello {
+    width: 240px;
+    margin: 0 auto;
+    padding-top: 25px;
+    padding-bottom: 30px;
+  }
+  &_hello &__title {
+    color: #555;
+    font-family: @FOSEBOSC;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  &_hello &__order {
+    padding-top: 15px;
+  }
+  &_hello &__delivery {
+    padding-top: 7px;
+  }
+  &_hello &__form {
+    padding-top: 35px;
+  }
+  @media (min-width: @screen-sm) {
+    &_hello {
+      width: 500px;
+      padding-top: 40px;
+      padding-bottom: 84px;
+    }
+    &_hello &__delivery {
+      padding-top: 30px;
+    }
+    &_hello &__order {
+      padding-top: 23px;
+    }
+    &_hello &__form {
+      padding-top: 25px;
+    }
+  }
+}

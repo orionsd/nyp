@@ -1,0 +1,34 @@
+.product-preview {
+  min-height: inherit;
+  &__slider,
+  &__info {
+    min-height: inherit;
+  }
+  &__slider {
+    float: left;
+    border-right: 1px solid #e7e7e7;
+    display: none;
+  }
+  &__info {
+    position: relative;
+    float: left;
+  }
+  @media (min-width: @screen-sm) {
+    &__slider {
+      display: block;
+    }
+
+    &__info,
+    &__slider {
+      width: 50%;
+    }
+  }
+  @media (min-width: @screen-lg) {
+    &__slider {
+      width: 635px;
+    }
+    &__info {
+      width: 405px;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.form-row {
+  .form_hello &__change,
+  .form_hello &__reset {
+    margin-bottom: 20px;
+  }
+  @media (min-width: @screen-sm) {
+    .form_hello &__change,
+    .form_hello &__reset {
+      margin-bottom: 0;
+    }
+    &_actions {
+      margin-left: 100px;
+    }
+    .form_hello &_actions{
+      margin-left: 0;
+    }
+    .form_hello &__change {
+      margin-left: 10px;
+    }
+    .form_hello &__change,
+    .form_hello &__reset {
+      float: left;
+      margin-top: 7px;
+    }
+    .form_hello &__confirm {
+      float: right;
+    }
+  }
+}

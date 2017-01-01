@@ -1,0 +1,18 @@
+.modal-delivery {
+  &__price {
+    color: #555;
+    font-family: @FOSEBC;
+    font-size: 38px;
+    text-align: right;
+  }
+
+  @media (min-width: @screen-sm) {
+    &__price {
+      float: right;
+    }
+    &__address,
+    &__payment {
+      padding-right: 140px;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.form-label {
+  position: relative;
+  &__title {
+    color: #444;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-right: 30px;
+    line-height: 20px;
+  }
+  &__input {
+    width: 100%;
+    height: 42px;
+    border: 3px solid #e3e3e3;
+    padding-left: 37px;
+  }
+  @media (min-width: @screen-sm) {
+    width: 261px;
+    .form_reg &__title,
+    .form_sign &__title {
+      position: absolute;
+      left: -100px;
+      top: 50%;
+      margin-top: -10px;
+    }
+  }
+}

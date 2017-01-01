@@ -1,0 +1,91 @@
+.menu-link {
+  padding: 16px;
+  display: block;
+  position: relative;
+  color: #ffffff;
+  &__title {
+    text-transform: uppercase;
+    font-family: @FOSEBOSC;
+    font-size: 14px;
+  }
+  &__icon {
+    min-height: 44px;
+  }
+  &__description {
+    display: none;
+  }
+  &__count {
+    font-size: 14px;
+    position: absolute;
+    top: 0;
+    right: 24px;
+    padding: 4px 5.5px 0 5.5px;
+    background-color: #51b302;
+    border-radius: 20px;
+    font-family: @FOSEBOSC;
+    line-height: 1;
+    color: #ffffff;
+  }
+  &:hover {
+    background-color: #F13844;
+  }
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  &_pk &__title,
+  &_pk &__description,
+  &_pk &__icon {
+    //padding-left: 20px;
+  }
+  &_pk &__icon {
+    width: 26px;
+    height: 32px;
+  }
+  &_basket &__icon {
+    width: 40px;
+    height: 27px;
+  }
+  @media (min-width: @screen-sm) {
+    display: block;
+    padding: 16px 13px;
+    &__description {
+      display: block;
+      text-transform: none;
+      width: 97px;
+      margin-top: 5px;
+      font-size: 16px;
+    }
+    &__title {
+      font-size: 16px;
+      letter-spacing: 2px;
+    }
+    &__count {
+      font-size: 20px;
+      top: 2px;
+      right: 2px;
+       padding: 5px 8.5px 1px 8.5px;
+    }
+
+    &__icon {
+      min-height: 65px;
+    }
+
+    &_pk &__icon {
+      width: 36px;
+      height: 44px;
+      //margin: 0 auto;
+    }
+    &_basket &__icon {
+      width: 57px;
+      height: 38px;
+    }
+  }
+  @media (min-width: @screen-vl) {
+    &__count {
+      right: 27px;
+      top: 0;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.navbar-nav {
+  text-align: center;
+  margin-top: 25px;
+  > li {
+    display: inline-block;
+  }
+  > li > a {
+    padding: 0;
+  }
+  @media (min-width: @screen-sm) {
+    > li {
+      float: none;
+    }
+  }
+  @media (min-width: @screen-md) {
+    margin-top: 0;
+    width: 100%;
+    min-height: 160px;
+    display: table;
+    > li {
+      text-align: center;
+      vertical-align: middle;
+      position: relative;
+      float: none;
+    }
+
+    > li > a {
+      width: 130px;
+      height: 130px;
+    }
+  }
+  @media (min-width: @screen-lg) {
+    > li {
+      padding: 0 10px;
+    }
+  }
+  @media (min-width: @screen-vl) {
+    > li {
+      padding: 0 35px;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.social-link {
+  display: block;
+  &__icon {
+    color: #565656;
+    width: 48px;
+    height: 48px;
+  }
+
+  &:hover &__icon {
+    color: #E60716;
+  }
+
+  .modal-social &__icon {
+    color: #dbdbdb;
+  }
+
+  @media (min-width: @screen-sm) {
+    &__icon {
+      width: 58px;
+      height: 57px;
+    }
+  }
+  @media (min-width: @screen-vl) {
+    .modal-social &__icon {
+      color: #044;
+    }
+  }
+}

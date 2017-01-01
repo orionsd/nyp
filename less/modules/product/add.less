@@ -1,0 +1,55 @@
+.product-add {
+  &__title {
+    font-family: @FOSEBC;
+    font-size: 22px;
+    color: #555;
+    width: 220px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+  }
+
+&__title:before,
+  &__title:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    margin-top: -14px;
+    display: inline-block;
+  }
+  &__title:before {
+    left: -23px;
+    .size(23px, 28px);
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAcCAMAAAC9M9RRAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAATlBMVEUAAADmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxYAAAC6RUS7AAAAGHRSTlMAaBVs1B53NudbUfa5D3X9mwUEmVRceSCpZDr7AAAAAWJLR0QAiAUdSAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAFlJREFUKM/VjjkOgDAMBJ0DEsjFzf7/pRR0ZEVBFaaxNGvZK/JAaWEYWBpo+yEw9IVW0iBgvPg/0PVUO4+B6DEgplrngmmu7LKi5Ho5RYSN3N7hHe1ynPe8AHmoBmtrYckPAAAAAElFTkSuQmCC');
+  }
+  &__title:after {
+    right: -31px;
+    margin-top: -18.5px;
+    .size(31px, 37px);
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAlCAMAAACNkcLAAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAA51BMVEUAAADmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxbmBxYAAAB+ff2CAAAAS3RSTlMALKQEe/kozH3OLqUtERIiJDM2REhVWmZsd36IkZmjqrW7x9nd6+797dvJt5OBblxKOCYUAmto8Qr+jgVn+MQbNN7qQRO0/AF8QqLCLVySAAAAAWJLR0QAiAUdSAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAMBJREFUOMvdj1sTgVAURk9KuZaQ3JJI7rcoipKQy/7//wePxtiPzFiPe63vzBxCXqFiBIFm4sB+1hQH8QSNjZOpfxsTFhs/SWfIb8nyQk7MF4pSSS5XqrW60lCbWotr6x2j+9CA8fRGT+9zA22oppVRbVyZyFNpVpiLprDILn/8tS9gmai2YSVhft0Ax91gxdYDf4cFwR7CAxYcTxAxZyQ4XyI48dgT1xD2ARbsfPBkLNi4DtzWWCGtwMY8Ma230x270iBa76/6QQAAAABJRU5ErkJggg==');
+  }
+
+  &__title .icon-push-left,
+  &__title .icon-push-right {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    margin-top: -14.5px;
+    .size(23px, 29px);
+  }
+
+  &__title .icon-push-left {
+    left: -23px;
+  }
+  &__title .icon-push-right {
+    right: -31px;
+  }
+  &__slider {
+    padding-top: 70px;
+  }
+  @media (min-width: @screen-sm) {
+    &__title {
+      width: 340px;
+    }
+  }
+}

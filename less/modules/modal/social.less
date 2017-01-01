@@ -1,0 +1,39 @@
+.modal-social {
+  margin: 0 auto;
+  &__title {
+    color: #BEBEBE;
+    font-family: "Arial";
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+  &__content {
+    padding-top: 15px;
+  }
+  @media (min-width: @screen-sm) {
+    max-width: 475px;
+    &__title {
+      width: 65px;
+      float: left;
+      letter-spacing: 0;
+      text-align: left;
+      padding-top: 10px;
+    }
+    &__content {
+      padding-top: 0;
+    }
+  }
+  @media (min-width: @screen-lg) {
+    max-width: 500px;
+    &__title {
+      margin-left: 15px;
+    }
+  }
+  @media (min-width: @screen-vl) {
+    &__title {
+      color: #044;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.catalog-box-title {
+  display: block;
+  font-family: @FOSEBOSC;
+  font-size: 22px;
+  color: #555;
+  height: 46px;
+  line-height: 24px;
+  overflow: hidden;
+  text-align: center;
+  &:hover,
+  &:focus {
+    color: #f13844;
+    text-decoration: none;
+  }
+  @media (min-width: @screen-sm) {
+    text-align: left;
+    .catalog-box_action & {
+      height: 74px;
+      font-size: 32px;
+      line-height: 37px;
+    }
+  }
+  @media (min-width: @screen-vl) {
+    .catalog-box_action & {
+      height: 37px;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.banner {
+  display: block;
+  margin: 10px 0;
+  min-height: 286px;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+  &_product {
+    height: 102px;
+    background-color: #e60716;
+    margin: 0;
+    min-height: 0;
+    padding-left: 25px;
+  }
+  &_product &__text {
+    color: #FFF;
+    font-family: @FOSEBC;
+    display: block;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding-top: 15px;
+    position: relative;
+    max-width: 240px;
+  }
+  &_product &__img {
+    position: absolute;
+    right: 0;
+  }
+  @media (min-width: @screen-sm) {
+    margin: 25px 0;
+    &_product {
+      margin: 0;
+    }
+  }
+
+  @media (min-width: @screen-sm) {
+    height: 556px;
+    &_product {
+      height: 102px;
+    }
+  }
+  @media (min-width: @screen-vl) {
+    margin: 25px 0;
+    &_product {
+      height: 102px;
+      margin: 0;
+    }
+  }
+}

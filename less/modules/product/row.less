@@ -1,0 +1,33 @@
+.product-row {
+  &__price {
+    margin-top: 5px;
+  }
+  &__select,
+  &__price {
+    float: left;
+  }
+  &__btn {
+    float: right;
+  }
+  &__select + &__select {
+    margin-left: 10px;
+  }
+  &__select {
+    width: 120px;
+  }
+  @media (min-width: @screen-sm) {
+    &__select {
+      width: 125px;
+    }
+  }
+  @media (min-width: @screen-md) {
+    &__select {
+      width: 170px;
+    }
+  }
+  @media (min-width: @screen-lg) {
+    &__select {
+      width: 177px;
+    }
+  }
+}
