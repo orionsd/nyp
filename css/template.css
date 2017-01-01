@@ -3782,6 +3782,12 @@ label[for="tabs__select_maps"] {
 }
 
 
+.stripe_m {
+  height: 30px;
+  width: 1030px;
+  background: #000000;
+
+}
 
 /*Media*/
 

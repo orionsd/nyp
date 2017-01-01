@@ -2778,6 +2778,7 @@ a:focus {
   font: 13px/17px 'OfficinaSerifMedium', Arial, sans-serif;
 }
 
+
 @media screen and (max-width: 992px) {
   .status__img {
     display: block;
@@ -2851,6 +2852,8 @@ a:focus {
   }
 }
 
+
+
 .about__restourants-picture-img {
   max-width: 100%;
   width: 100%;
@@ -2910,3 +2913,5 @@ a:focus {
   background: url('../images/assets/about/bg2.jpg') no-repeat;
   background-size: cover;
 }
+
+
